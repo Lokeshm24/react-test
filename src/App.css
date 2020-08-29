@@ -1,38 +1,310 @@
+@font-face {
+  font-family: "DINPro-Regular";
+  src: url("./assets/fonts/DINPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "DINPro-Light";
+  src: url("./assets/fonts/DINPro-Light.ttf");
+}
+
+@font-face {
+  font-family: "DINPro-Bold";
+  src: url("./assets/fonts/DINPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: "DINPro-Black";
+  src: url("./assets/fonts/DINPro-Black.ttf");
+}
+
+@font-face {
+  font-family: "DINPro-Medium";
+  src: url("./assets/fonts/DINPro-Medium.ttf");
+}
+
 .App {
+  margin: 50px;
+}
+
+.heading-3 {
+  font-size: 1.3vw;
+}
+
+.heading-2 {
+  font-size: 1.6vw;
+}
+
+.text-md {
+  font-size: 0.8vw;
+  font-family: "DINPro-Regular";
+}
+
+.text-grey {
+  color: #444444;
+}
+
+.text-grey-light {
+  color: #adadad;
+}
+
+.text-primary {
+  color: #37b396;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-red {
+  color: #dd1c26;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-right {
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-capitalize {
+  text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-bold,
+.heading-3,
+.heading-2 {
+  font-family: "DINPro-Bold";
+}
+
+.mt-1 {
+  margin-top: 0.7rem;
+}
+
+.mt-2 {
+  margin-top: 1.2rem;
+}
+
+.mb-2 {
+  margin-bottom: 1.2rem;
+}
+
+.ml-1 {
+  margin-left: 0.7rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-5 {
+  margin-top: 3rem;
+}
+
+.pt-2,
+.py-2,
+.p-2 {
+  padding-top: 1.2rem;
+}
+
+.pl-2,
+.px-2,
+.p-2 {
+  padding-left: 1.2rem;
+}
+
+.pr-2,
+.px-2,
+.p-2 {
+  padding-right: 1.2rem;
+}
+
+.pb-2,
+.py-2,
+.p-2 {
+  padding-bottom: 1.2rem;
+}
+
+.pt-1,
+.py-1,
+.p-1 {
+  padding-top: 0.7rem;
+}
+
+.pl-1,
+.px-1,
+.p-1 {
+  padding-left: 0.7rem;
+}
+
+.pr-1,
+.px-1,
+.p-1 {
+  padding-right: 0.7rem;
+}
+
+.pb-1,
+.py-1,
+.p-1 {
+  padding-bottom: 0.7rem;
+}
+
+.lh-2 {
+  line-height: 1.7rem;
+}
+
+.d-flex {
   display: flex;
-  flex-direction: column;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-primary {
+  background-color: #ccf5e7;
+}
+
+.bg-squash {
+  background-color: #f5a626;
+}
+
+.align-items-center {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.align-items-right {
+  align-items: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-between {
+  align-content: space-between;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.rounded-sm {
+  border-radius: 3.8px;
+}
+
+.rounded-md {
+  border-radius: 7.2px;
+}
+
+.rounded-full {
+  border-radius: 100px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.gap-2 {
+  gap: 0.35rem;
+}
+
+.flow-col {
+  grid-auto-flow: column;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.card {
+  border: 1px solid rgba(68, 68, 68, 0.1);
+  border-radius: 4px;
+  box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+  font-size: 1vw;
+}
+
+.colleges-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 4%;
+  position: relative;
+}
+
+.card-img {
+  height: 200px;
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+  background: url("assets/images/college_02.jpg") center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+.tag {
+  transform: rotate(-45deg);
+  fill: #dd1c26;
+}
+
+.price-tag {
+  position: absolute;
+  top: 6px;
+  left: 19px;
+  font-size: 8px;
+}
+
+.offer-section {
+  border-radius: 0 100px 100px 0;
+}
+
+.promoted {
+  background-color: #68a7ff;
+  line-height: 2rem;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 0 1.2rem;
+  right: 1px;
+  top: -15px;
+}
+
+.promoted::before {
+  content: "";
+  border-top: 15px solid #68a7ff;
+  border-right: 15px solid #68a7ff;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  position: absolute;
+  left: -17px;
+}
+
+.promoted::after {
+  content: "";
+  border-bottom: 15px solid #68a7ff;
+  border-right: 15px solid #68a7ff;
+  border-top: 15px solid transparent;
+  border-left: 15px solid transparent;
+  position: absolute;
+  left: -17px;
+  top: 2px;
+}
+
+@media screen and (max-width: 74rem) {
+  .colleges-list {
+    grid-template-columns: 1fr;
   }
 }
